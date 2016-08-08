@@ -505,8 +505,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 119}
-  m_SizeDelta: {x: 447, y: 199.5}
+  m_AnchoredPosition: {x: 19.25, y: 97}
+  m_SizeDelta: {x: 761.5, y: 386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024929104
 MonoBehaviour:
@@ -528,7 +528,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f71773d2ecb1f4565a66e77cfe4d509e, type: 3}
+    m_Font: {fileID: 12800000, guid: 5cf204d2217a74a0895e22e8baade18a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
