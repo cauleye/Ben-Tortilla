@@ -23,12 +23,6 @@ public class IngredientsManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 		Debug.Log("Don't destroy on load: " + name);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 
 	public void AddTomato(){
 		tomatoCount++;
