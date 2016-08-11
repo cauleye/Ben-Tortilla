@@ -11,6 +11,9 @@ public class TortillaManager : MonoBehaviour {
 	public IngredientsManager ingredientsManager;
 
 	public GameObject foldButton;
+	public GameObject continueButton;
+
+	public Animator animator;
 
 	// Use this for initialization
 	void Start () {
@@ -48,4 +51,25 @@ public class TortillaManager : MonoBehaviour {
 			chorizoOnTortilla--;
 		}
 	}
+
+
+	public void FoldTortilla(){
+		DestroyFood ();
+		foldButton.SetActive (false);
+		animator.Play ("FoldTortilla");
+		continueButton.SetActive (true);
+	}
+
+	void DestroyFood(){
+		GameObject[] tomatos = GameObject.FindGameObjectsWithTag ("Tomato");
+		for (int i = 0; i < tomatos.Length; i++) {
+			Destroy (tomatos [i]);
+		}
+
+		GameObject[] chorizos = GameObject.FindGameObjectsWithTag ("Chorizo");
+		for (int i = 0; i < chorizos.Length; i++) {
+			Destroy (chorizos [i]);
+		}
+	}
+
 }
