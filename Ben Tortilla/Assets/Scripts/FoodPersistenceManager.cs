@@ -12,7 +12,7 @@ public class FoodPersistenceManager : MonoBehaviour {
 
 	void Update(){
 		Scene scene = SceneManager.GetActiveScene ();
-		if (scene.name == "04 Arrange") {
+		if (scene.name == "05 Toast") {
 			Destroy (gameObject);
 		}
 	}
