@@ -55,7 +55,7 @@ public class TortillaManager : MonoBehaviour {
 
 	public void FoldTortilla(){
 		DestroyFood ();
-		foldButton.SetActive (false);
+		Destroy (foldButton);
 		animator.Play ("FoldTortilla");
 		continueButton.SetActive (true);
 	}
