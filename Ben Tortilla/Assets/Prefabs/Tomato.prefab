@@ -25,6 +25,7 @@ GameObject:
   - 114: {fileID: 114000013721468852}
   - 50: {fileID: 50000014217599002}
   - 82: {fileID: 82000010325465728}
+  - 114: {fileID: 114000014010846894}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -180,6 +181,17 @@ MonoBehaviour:
   audioSource: {fileID: 82000010325465728}
   chopSound: {fileID: 8300000, guid: d3c808bf6701c462aa419149d84ad304, type: 3}
   noChop: {fileID: 8300000, guid: 9315d167ced724f84afbc81620cc7e3b, type: 3}
+--- !u!114 &114000014010846894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011049770378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b10d11973684e1ba39bbe332e19f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000010859212896
 SpriteRenderer:
   m_ObjectHideFlags: 1
