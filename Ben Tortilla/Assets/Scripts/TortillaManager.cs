@@ -5,6 +5,9 @@ public class TortillaManager : MonoBehaviour {
 
 	public int tomatoOnTortilla;
 	public int chorizoOnTortilla;
+	public int onionOnTortilla;
+	public int cheeseOnTortilla;
+	public int pepperOnTortilla;
 
 
 	public GameObject managerObject;
@@ -25,7 +28,7 @@ public class TortillaManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (tomatoOnTortilla == ingredientsManager.tomatoCount && chorizoOnTortilla == ingredientsManager.chorizoCount) {
+		if (tomatoOnTortilla == ingredientsManager.tomatoCount && chorizoOnTortilla == ingredientsManager.chorizoCount && onionOnTortilla == ingredientsManager.onionCount && pepperOnTortilla == ingredientsManager.pepperCount && cheeseOnTortilla == ingredientsManager.cheeseCount) {
 			foldButton.SetActive (true);
 		} else {
 			foldButton.SetActive (false);
@@ -40,7 +43,15 @@ public class TortillaManager : MonoBehaviour {
 		if (other.tag == "Chorizo") {
 			chorizoOnTortilla++;
 		}
-
+		if (other.tag == "Onion") {
+			onionOnTortilla++;
+		}
+		if (other.tag == "Pepper") {
+			pepperOnTortilla++;
+		}
+		if (other.tag == "Cheese") {
+			cheeseOnTortilla++;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other){
@@ -49,6 +60,15 @@ public class TortillaManager : MonoBehaviour {
 		}
 		if (other.tag == "Chorizo"){
 			chorizoOnTortilla--;
+		}
+		if (other.tag == "Onion") {
+			onionOnTortilla--;
+		} 
+		if (other.tag == "Pepepr") {
+			pepperOnTortilla--;
+		}
+		if (other.tag == "Cheese") {
+			cheeseOnTortilla--;
 		}
 	}
 
@@ -69,6 +89,21 @@ public class TortillaManager : MonoBehaviour {
 		GameObject[] chorizos = GameObject.FindGameObjectsWithTag ("Chorizo");
 		for (int i = 0; i < chorizos.Length; i++) {
 			Destroy (chorizos [i]);
+		}
+
+		GameObject[] onions = GameObject.FindGameObjectsWithTag ("Onion");
+		for (int i = 0; i < onions.Length; i++) {
+			Destroy (onions [i]);
+		}
+
+		GameObject[] cheeses = GameObject.FindGameObjectsWithTag ("Cheese");
+		for (int i = 0; i < cheeses.Length; i++) {
+			Destroy (cheeses [i]);
+		}
+
+		GameObject[] peppers = GameObject.FindGameObjectsWithTag ("Pepper");
+		for (int i = 0; i < peppers.Length; i++) {
+			Destroy (peppers [i]);
 		}
 	}
 

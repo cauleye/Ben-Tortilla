@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Tomato
   - Chorizo
+  - Cheese
+  - Onion
+  - Pepper
   layers:
   - Default
   - TransparentFX
